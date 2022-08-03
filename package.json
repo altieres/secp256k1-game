@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "lib-sample": "ts-node 01-lib-sample.ts"
+    "lib-sample": "ts-node 01-lib-sample.ts",
+    "verify-blocks": "ts-node 02-verify-blocks.ts"
   },
   "dependencies": {
     "tiny-secp256k1": "^2.2.1"
