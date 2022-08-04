@@ -10,13 +10,8 @@ const toHexString = (bytes: Uint8Array) =>
 const sha256 = (buffer: Buffer): Buffer =>
   createHash('sha256').update(buffer).digest()
 
-// check first block
-// const message = 'There is nothing too shocking about this signature'
-// const signatureBase16 = 'ffffffff077b7209dc866fbfa0d2bf67a0c696afffe57a822e2ba90059a2cc7abb998becb4e427650e282522bf9576524665301b807c0e3194cf1e6c795a0cf7'
-
-// new block! :)
-const message = 'Got your point!'
-const signatureBase16 = 'aaaa0000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000a00000000000000000000000000000000'
+const message = 'Nice message!'
+const signatureBase16 = 'cccc0000000000000000000000000000000000000000000000c00000000000000000000000000000000000000000000c00000000000000000000000000000000'
 
 const fullMessage = `Bitcoin Signed Message:\n${message}`
 const hashBuff = Buffer.from(fullMessage, 'utf8')
